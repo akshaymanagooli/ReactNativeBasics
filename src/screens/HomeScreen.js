@@ -26,10 +26,20 @@ const HomeScreen = ({ navigation }) => {
       <Button
       onPress={() => navigation.navigate('squareScreen')}
       title="Go to Square Screen" />
+      <Button
+      onPress={() => navigation.navigate('textInputScreen')}
+      title="Go to Text Input Screen" />
+      <Button
+      onPress={() => navigation.navigate('boxScreen')}
+      title="Go to BoxScreen Screen" />
   </View>
 };
 
 const styles = StyleSheet.create({
+  viewStyle: {
+    alignItems:'center',
+    justifyContent:'space-between'
+},
   text: {
     fontSize: 16,
     margin: 16

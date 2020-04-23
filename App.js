@@ -7,6 +7,9 @@ import CounterScreen from "./src/screens/CounterScreen";
 import ImageScreen from "./src/screens/ImageScreen";
 import ListScreenComponent from "./src/screens/ListScreenComponent";
 import SquareScreen from './src/screens/SquareScreen';
+import { TextInput } from 'react-native-gesture-handler';
+import TextInputScreen from './src/screens/TextInputScreen';
+import BoxScreen from './src/screens/BoxScreen';
 
 const App = createStackNavigator(
   {
@@ -16,7 +19,9 @@ const App = createStackNavigator(
     counterScreen:CounterScreen,
     imageScreen:ImageScreen,
     listScreenComponent:ListScreenComponent,
-    squareScreen:SquareScreen
+    squareScreen:SquareScreen,
+    textInputScreen:TextInputScreen,
+    boxScreen:BoxScreen
   },
   {
     initialRouteName: "Home",
